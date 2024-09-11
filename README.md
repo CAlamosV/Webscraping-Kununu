@@ -1,3 +1,6 @@
+## Description
+This repo provides Python code for webscraping Kununu, an employer review platform similar to Glassdoor with a strong presence in German-speaking countries.
+
 ## Instructions for Running Code
 
 1. Install required packages:
@@ -41,3 +44,6 @@ pip install -r requirements.txt
 
  A web scraping service is recommended to avoid IP blocks. The code supports ScrapingBee, but can run without it at a higher risk of being rate-limited.
 
+## Description of Scraped Data
+The varaibles collected are described in the table below:
+![Variable Descriptions](images/var_descriptions.png)
