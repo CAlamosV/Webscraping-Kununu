@@ -1,6 +1,13 @@
 ## Description
 This repo provides Python code for webscraping Kununu, an employer review platform similar to Glassdoor with a strong presence in German-speaking countries.
 
+This code was developed for [Caldwell, Haegele, and Heining (2024)](https://sydneec.github.io/Website/CHH_Bargain.pdf). "Bargaining Power and Inequality in the Labor Market." (Revise and Resubmit, Quarterly Journal of Economics).
+
+> **Important Notes:**
+> - This code works as of August 2024, but Kununu's website may change. If element and class IDs are changed but the overall structure of the website remains similar, it may suffice to update the CLASS_IDS dictionary in scrape_employer_profiles.ipynb.
+> - This code takes roughly 10 hours to run.
+> - By default, this code does not use a proxy rotation service, which may result in IP blocks. See instructions below for using ScrapingBee to avoid this issue.
+
 ## Instructions for Running Code
 
 1. Install required packages:
