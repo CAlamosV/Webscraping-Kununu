@@ -28,7 +28,7 @@ This code was developed for [Caldwell, Haegele, and Heining (2024)](https://sydn
 
 4. Run ```scrape_employer_profiles.ipynb```:
 - This script scrapes detailed information from each company profile
-- Adjust the CONCURRENCY variable if needed to change the number of pages that are scraped in parallel (default is 10)
+- Adjust the ```CONCURRENCY``` variable if needed to change the number of pages that are scraped in parallel (default is 10)
 - The script saves results in batches of 5000 profiles in case of interruptions
 - Final output: ```data/all_scraped_kununu_data.csv```
 
