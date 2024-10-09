@@ -4,7 +4,7 @@ This repo provides Python code for webscraping Kununu, an employer review platfo
 This code was developed for [Caldwell, Haegele, and Heining (2024)](https://sydneec.github.io/Website/CHH_Bargain.pdf). "Bargaining Power and Inequality in the Labor Market." (Revise and Resubmit, *Quarterly Journal of Economics*).
 
 > **Important Notes:**
-> - This code works as of July 2024, but Kununu's website may change. If element and class IDs are changed but the overall structure of the website remains similar, it may suffice to update the CLASS_IDS dictionary in scrape_employer_profiles.ipynb.
+> - This code works as of July 2024, but Kununu's website may change. If element and class IDs are changed but the overall structure of the website remains similar, it may suffice to update the CLASS_IDS dictionary in ```scrape_employer_profiles.ipynb```.
 > - This code takes roughly 10 hours to run.
 > - By default, this code does not use a proxy rotation service, which may result in IP blocks. See instructions below for using ScrapingBee to avoid this issue.
 
@@ -22,20 +22,20 @@ pip install -r requirements.txt
   soup = soup_from_url(url, scrapingbee=True)
   ```
 
-3. Run get_list_of_employer_profile_urls.ipynb:
+3. Run ```get_list_of_employer_profile_urls.ipynb```:
 - This will scrape Kununu's sitemap to get all company profile URLs
-- Output: data/all_kununu_company_profile_links.txt
+- Output: ```data/all_kununu_company_profile_links.txt```
 
 4. Run scrape_employer_profiles.ipynb:
 - This script scrapes detailed information from each company profile
 - Adjust the CONCURRENCY variable if needed to change the number of pages that are scraped in parallel (default is 10)
 - The script saves results in batches of 5000 profiles in case of interruptions
-- Final output: data/all_scraped_kununu_data.csv
+- Final output: ```data/all_scraped_kununu_data.csv```
 
 ## Computational Requirements
 
 - Software: Python 3.12.0
-- Required Python packages (see requirements.txt for exact versions used):
+- Required Python packages (see ```requirements.txt``` for exact versions used):
   - beautifulsoup4
   - numpy
   - pandas
