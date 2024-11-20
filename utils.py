@@ -2,7 +2,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-def soup_from_url(url: str, scrapingbee = False) -> BeautifulSoup:
+def soup_from_url(url: str, scrapingbee = True) -> BeautifulSoup:
     """
     Get BeautifulSoup object from a URL
     """
