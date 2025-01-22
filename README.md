@@ -54,8 +54,3 @@ This code was developed for [Caldwell, Haegele, and Heining (2024)](https://sydn
 - Memory: 8GB RAM was used for the original analysis
 
  A web scraping service is recommended to avoid IP blocks. The code supports ScrapingBee, but can run without it at a higher risk of being rate-limited.
-
-## Description of Scraped Data
-The varaibles collected are described in the table below:
-![Variable Descriptions](images/var_descriptions.png)
-# kununu_scrape
